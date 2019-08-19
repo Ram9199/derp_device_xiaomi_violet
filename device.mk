@@ -17,7 +17,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe
+    $(LOCAL_PATH)/overlay-validus
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
@@ -267,10 +267,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.violet
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -381,10 +377,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     thermal.sm6150
 
-# ThermalController app
-PRODUCT_PACKAGES += \
-    ThermalController
-
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2
@@ -392,10 +384,6 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
-
-# Wallpapers
-PRODUCT_PACKAGES += \
-    WallpapersBReel2018
 
 # Wifi
 PRODUCT_PACKAGES += \
